@@ -1,7 +1,9 @@
+/* RESET */
 * {
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   margin: 0;
   min-height: 100vh;
@@ -34,13 +36,24 @@ body {
   color: #0f1512;
 }
 
+/* LOGO */
+.logo {
+  display: block;
+  margin: 0 auto 14px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 /* HEADER */
 .brand {
   margin: 0;
   font-size: 28px;
   text-align: center;
-  letter-spacing: 1px;
   font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .affiliate {
@@ -67,7 +80,7 @@ body {
   filter: brightness(1.05);
 }
 
-/* SHOPEE */
+/* SHOPEE BUTTON */
 .shopee {
   background: linear-gradient(135deg, #ff5722, #ff8a50);
   color: #fff;
@@ -82,17 +95,17 @@ body {
   color: #0f1512;
 }
 
-/* CATEGORY */
+/* CATEGORY / PRODUCT CARD */
 .category {
   display: block;
   background: #ffffff;
-  border-radius: 14px;
-  padding: 15px;
+  border-radius: 16px;
+  padding: 12px;
   margin-bottom: 12px;
   text-decoration: none;
   color: #0f1512;
-  transition: all 0.2s ease;
   border: 1px solid #dff3e9;
+  transition: all 0.2s ease;
 }
 
 .category:hover {
@@ -113,31 +126,12 @@ body {
   color: #4d6b5d;
 }
 
-/* FOOTER */
-footer {
-  margin-top: 26px;
-  text-align: center;
-  font-size: 11px;
-  color: #6b7f75;
-}
-
-/* LOGO */
-.logo {
-  display: block;
-  margin: 0 auto 14px;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* LABEL PRODUK */
+/* BADGE */
 .badge {
   display: inline-block;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 3px 8px;
   border-radius: 20px;
   margin-bottom: 6px;
   color: #fff;
@@ -155,45 +149,17 @@ footer {
   background: linear-gradient(135deg, #2196f3, #0d47a1);
 }
 
+/* PRODUCT IMAGE */
 .product-img {
   width: 100%;
-  max-height: 180px;
-  object-fit: contain; /* ⬅️ INI KUNCINYA */
+  height: 150px;
+  object-fit: contain;
+  background: #f7f7f7;
   border-radius: 12px;
   margin-bottom: 10px;
-  background: #f7f7f7;
 }
 
-/* FIX BADGE TIDAK NUTUP GAMBAR */
-.category {
-  position: static;
-}
-
-.category .badge {
-  position: static;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-/* === FIX BADGE NUTUP GAMBAR (FORCE) === */
-.category {
-  position: static !important;
-}
-
-.category .badge {
-  position: static !important;
-  display: inline-block !important;
-  margin-bottom: 10px !important;
-  z-index: auto !important;
-}
-
-/* PAKSA GAMBAR DI BAWAH BADGE */
-.category .product-img {
-  display: block !important;
-  margin-top: 0 !important;
-}
-
-/* === GRID 2 KOLOM PRODUK === */
+/* GRID KHUSUS PRODUK (SAFETY RIDING, DLL) */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -204,24 +170,10 @@ footer {
   grid-column: 1 / -1;
 }
 
-/* Card produk tetap cakep */
-.category {
-  padding: 12px;
-  border-radius: 16px;
-}
-
-/* Gambar produk rapi di grid */
-.product-img {
-  width: 100%;
-  height: 150px;
-  object-fit: contain;
-  background: #f7f7f7;
-  border-radius: 12px;
-}
-
-/* Badge kecil & gak ganggu */
-.category .badge {
+/* FOOTER */
+footer {
+  margin-top: 26px;
+  text-align: center;
   font-size: 11px;
-  padding: 3px 8px;
-  margin-bottom: 6px;
+  color: #6b7f75;
 }
