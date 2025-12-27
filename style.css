@@ -162,3 +162,14 @@ footer {
   border-radius: 12px;
   margin-bottom: 10px;
 }
+
+/* FIX BADGE TIDAK NUTUP GAMBAR */
+.category {
+  position: static;
+}
+
+.category .badge {
+  position: static;
+  display: inline-block;
+  margin-bottom: 8px;
+}
