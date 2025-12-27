@@ -5,7 +5,13 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #0b0f0c, #101915);
+  background: linear-gradient(
+    160deg,
+    #00b14f 0%,
+    #1ed760 35%,
+    #0f2f23 70%,
+    #0b0f0c 100%
+  );
   font-family: 'Segoe UI', Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -13,12 +19,19 @@ body {
   color: #fff;
 }
 
+/* CARD */
 .card {
   width: 360px;
-  background: #0f1512;
-  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f4fdf8 40%,
+    #e9f7f0 100%
+  );
+  border-radius: 20px;
   padding: 26px;
-  box-shadow: 0 0 35px rgba(0, 255, 120, 0.18);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+  color: #0f1512;
 }
 
 /* HEADER */
@@ -27,6 +40,7 @@ body {
   font-size: 28px;
   text-align: center;
   letter-spacing: 1px;
+  font-weight: 800;
 }
 
 .affiliate {
@@ -36,7 +50,7 @@ body {
   margin-bottom: 22px;
 }
 
-/* SHOPEE BUTTON */
+/* BUTTON */
 .btn {
   display: block;
   text-align: center;
@@ -45,14 +59,15 @@ body {
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 26px;
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  filter: brightness(1.1);
+  filter: brightness(1.05);
 }
 
+/* SHOPEE */
 .shopee {
   background: linear-gradient(135deg, #ff5722, #ff8a50);
   color: #fff;
@@ -62,26 +77,40 @@ body {
 .section h2 {
   font-size: 16px;
   margin-bottom: 14px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-bottom: 6px;
+  border-bottom: 2px solid #00b14f;
+  color: #0f1512;
 }
 
+/* CATEGORY */
 .category {
-  background: #131a16;
-  border-radius: 12px;
-  padding: 14px;
+  display: block;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 15px;
   margin-bottom: 12px;
+  text-decoration: none;
+  color: #0f1512;
+  transition: all 0.2s ease;
+  border: 1px solid #dff3e9;
+}
+
+.category:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,177,79,0.25);
+  border-color: #00b14f;
 }
 
 .category h3 {
   margin: 0;
   font-size: 14px;
+  font-weight: 700;
 }
 
 .category p {
-  margin: 6px 0 0;
+  margin-top: 6px;
   font-size: 12px;
-  opacity: 0.7;
+  color: #4d6b5d;
 }
 
 /* FOOTER */
@@ -89,5 +118,5 @@ footer {
   margin-top: 26px;
   text-align: center;
   font-size: 11px;
-  opacity: 0.4;
+  color: #6b7f75;
 }
