@@ -158,9 +158,10 @@ footer {
 .product-img {
   width: 100%;
   max-height: 180px;
-  object-fit: cover;
+  object-fit: contain; /* ⬅️ INI KUNCINYA */
   border-radius: 12px;
   margin-bottom: 10px;
+  background: #f7f7f7;
 }
 
 /* FIX BADGE TIDAK NUTUP GAMBAR */
