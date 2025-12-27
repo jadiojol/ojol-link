@@ -1,1 +1,78 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1aff64, #0b0f0c);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card {
+  width: 360px;
+  background: #0f1512;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 0 40px rgba(0,255,120,0.25);
+  text-align: center;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #1aff64;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.sub {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: block;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.gojek { background: linear-gradient(135deg, #00aa13, #1aff64); }
+.grab { background: linear-gradient(135deg, #00b14f, #36ff9a); }
+.indrive {
+  background: linear-gradient(135deg, #aaff00, #7ed957);
+  color: #000;
+}
+.food { background: linear-gradient(135deg, #ff5722, #ff8a50); }
+.wa { background: linear-gradient(135deg, #25d366, #4cff9a); }
+
+footer {
+  margin-top: 24px;
+  font-size: 11px;
+  opacity: 0.6;
+}
