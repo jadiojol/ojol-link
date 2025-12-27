@@ -194,9 +194,13 @@ footer {
 }
 
 /* === GRID 2 KOLOM PRODUK === */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
 
-/* Biar judul section full */
-.section h2 {
+.product-grid h2 {
   grid-column: 1 / -1;
 }
 
