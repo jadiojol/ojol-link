@@ -192,3 +192,37 @@ footer {
   display: block !important;
   margin-top: 0 !important;
 }
+
+/* === GRID 2 KOLOM PRODUK === */
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Biar judul section full */
+.section h2 {
+  grid-column: 1 / -1;
+}
+
+/* Card produk tetap cakep */
+.category {
+  padding: 12px;
+  border-radius: 16px;
+}
+
+/* Gambar produk rapi di grid */
+.product-img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background: #f7f7f7;
+  border-radius: 12px;
+}
+
+/* Badge kecil & gak ganggu */
+.category .badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  margin-bottom: 6px;
+}
