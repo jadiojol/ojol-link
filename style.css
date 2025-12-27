@@ -173,3 +173,21 @@ footer {
   display: inline-block;
   margin-bottom: 8px;
 }
+
+/* === FIX BADGE NUTUP GAMBAR (FORCE) === */
+.category {
+  position: static !important;
+}
+
+.category .badge {
+  position: static !important;
+  display: inline-block !important;
+  margin-bottom: 10px !important;
+  z-index: auto !important;
+}
+
+/* PAKSA GAMBAR DI BAWAH BADGE */
+.category .product-img {
+  display: block !important;
+  margin-top: 0 !important;
+}
