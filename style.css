@@ -120,3 +120,14 @@ footer {
   font-size: 11px;
   color: #6b7f75;
 }
+
+/* LOGO */
+.logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
