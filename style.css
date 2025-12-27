@@ -131,3 +131,26 @@ footer {
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+/* LABEL PRODUK */
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.badge.best {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+}
+
+.badge.rekom {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+}
+
+.badge.new {
+  background: linear-gradient(135deg, #2196f3, #0d47a1);
+}
