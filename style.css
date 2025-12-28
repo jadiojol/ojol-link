@@ -177,3 +177,19 @@ footer {
   font-size: 11px;
   color: #6b7f75;
 }
+
+/* ===============================
+   GRID KHUSUS HALAMAN PRODUK
+   TIDAK NGARUH KE HOME
+================================ */
+
+.section.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Judul full lebar */
+.section.product-grid h2 {
+  grid-column: 1 / -1;
+}
